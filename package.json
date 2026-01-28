@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "ocean-frontend-2026",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {

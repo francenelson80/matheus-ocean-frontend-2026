@@ -3,6 +3,7 @@ import { Personagem } from "./components/personagem";
 import { Titulo } from "./components/titulo";
 
 export function Personagens() {
+  // Declara a variável de estado `personagens`
   const [personagens, setPersonagens] = useState<{
     name: string;
     image: string;
@@ -12,8 +13,11 @@ export function Personagens() {
 
   useEffect(() => {
     async function buscarPersonagens() {
+      // Busca dados na API do Rick and Morty
       const resposta = await fetch("https://rickandmortyapi.com/api/character")
+      // Converte os dados para JSON
       const resultado = await resposta.json()
+      // Salva os dados na variável de estado `personagens`
       setPersonagens(resultado.results)
     }
 

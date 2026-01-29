@@ -13,6 +13,12 @@ export function Personagem({
     especie,
     vida
 }: PropriedadesPersonagem) {
+    let classeDeVida = "vivo";
+
+    if (vida === "Dead") {
+        classeDeVida = "morte"
+    }
+    
     return (
         <div className="personagem">
           <img 
@@ -25,7 +31,7 @@ export function Personagem({
             <p className="especie">
               {especie}
             </p>
-            <span className="vida">
+            <span className={`vida ${classeDeVida}`}>
               {vida}
             </span>
           </div>

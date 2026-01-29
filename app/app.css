@@ -57,11 +57,19 @@ h1, p, span {
   border-radius: 8px;
 }
 
+.personagens .personagem .detalhes .morte { 
+  background: red;
+}
+
+.personagens .personagem .detalhes .vivo { 
+  background: green;
+}
+
+
 .personagens .personagem p {
   color: white;
 }
 
 .personagens .personagem span {
   color: black;
-  background: green;
 }
